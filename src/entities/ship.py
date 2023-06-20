@@ -33,7 +33,6 @@ class Ship(Entity):
                     self.game.state.add_entity(Laser(self.game, (self.position[0] + 14, self.position[1] - 32), -5))
                     self.charging = self.charge_speed
 
-
             elif event.type == pygame.KEYUP:
                 if event.key == pygame.K_LEFT or event.key == pygame.K_RIGHT:
                     self.moving = 0
@@ -58,8 +57,6 @@ class Ship(Entity):
         else:
             # reset the ship image
             self.image = self.orginal_image
-
-
 
         # keep the ship inside the screen
         if self.position[0] < 0:

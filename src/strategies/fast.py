@@ -9,7 +9,7 @@ class FastDescent(Strategy):
 
     def __init__(self, game):
         super().__init__(game)
-        self._direction = (0,1)
+        self._direction = (0, 1)
 
     def update(self, entity, events):
         speed = 0.75 + entity.game.state.level / 4
